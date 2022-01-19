@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>практика</title>
+      <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+      <script src="weather_jQuery.js"></script>
+  </head>
+  <body style="background-color: rgb(197, 197, 197);">
+
+    <select id="select">
+        <option value="today">for today</option>
+        <option value="5days">for 5 days</option>
+    </select>
+    <input type="text" id="town" placeholder="Select town">
+    <button>see weather</button>
+
+    <h1 class="townname"></h1>
+
+    <div id="weather">
+    </div>
+    <style>
+        #weather{
+            /* border: dotted 1px; */
+            display: none;
+        }
+        .day {
+            display: flex;
+        }
+        div.day1{
+            background-color: white;
+            margin-bottom: 20px;
+        }
+        div.day2{
+            background-color: yellow;
+            margin-bottom: 20px;
+        }
+        div.day3{
+            background-color: yellowgreen;
+            margin-bottom: 20px;
+        }
+        div.day4{
+            background-color: rgba(0, 128, 0, 0.531);
+            margin-bottom: 20px;
+        }
+        div.day5{
+            background-color: teal;
+            margin-bottom: 20px;
+        }
+        div.day6{
+            background-color: rgba(0, 0, 139, 0.462);
+        }
+    </style>
+  </body>
+</html>
